@@ -1,50 +1,64 @@
-# React + TypeScript + Vite
+# GitHub Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Sobre o Projeto
 
-Currently, two official plugins are available:
+O **GitHub Blog** é uma aplicação desenvolvida em **React.js** que consome a API do GitHub para exibir issues de um repositório como posts de um blog.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto foi desenvolvido como parte de um desafio para praticar conceitos essenciais do React e consumo de APIs REST.
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 📄 **Perfil do Usuário**: Exibe imagem, nome, biografia, número de seguidores e outras informações do perfil do GitHub.
+- 🔎 **Listagem e Filtro de Posts**: Lista todas as issues do repositório e permite filtrá-las.
+- 📰 **Visualização Completa do Post**: Permite visualizar o conteúdo completo da issue em uma página dedicada.
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠 Tecnologias Utilizadas
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **React.js**
+- **TypeScript**
+- **React Router DOM** (para roteamento)
+- **Axios** (para requisições HTTP)
+- **Styled Components** (para estilização)
+
+## 🎯 Conceitos Praticados
+
+- Consumo de APIs REST com **Fetch/Axios**
+- Utilização do **React Router DOM** para navegação
+- Gerenciamento de estado com **useState** e **useEffect**
+- Manipulação de formulários para filtragem de issues
+
+## 📂 Como Executar o Projeto
+
+### 1️⃣ Clonar o Repositório
+
+```sh
+git clone https://github.com/jocelitojr2/desafio-github-blog
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2️⃣ Acessar o Diretório do Projeto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```sh
+cd desafio-github-blog
 ```
+
+### 3️⃣ Instalar as Dependências
+
+```sh
+yarn install
+# ou
+npm install
+```
+
+### 4️⃣ Executar o Projeto
+
+```sh
+yarn dev
+# ou
+npm run dev
+```
+
+A aplicação estará disponível em: `http://localhost:5173/`
+
+---
+
+Feito com ❤️ por [Jocelito Junior](https://github.com/jocelitojr2) 🚀
