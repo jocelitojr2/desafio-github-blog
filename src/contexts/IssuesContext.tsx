@@ -90,7 +90,7 @@ export function IssuesProvider({ children }: IssuesProviderProps) {
   async function fetchIssues(query?: string) {
     const response = await api.get('/search/issues', {
       params: {
-        q: query || 'repo:jocelitojr2/desafio-github-blog',
+        q: `${query ? query + ' ' : ''}repo:jocelitojr2/desafio-github-blog`,
       }
     })
 
